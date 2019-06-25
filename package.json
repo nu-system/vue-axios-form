@@ -3,13 +3,13 @@
   "version": "0.0.2",
   "description": "一个基于 axios 利用 Form 表单的 dom 结构，发送 request 请求的组件。",
   "main": "lib/index.js",
-  "repository": "git@github.com:yued-fe/nu-vue.git",
+  "repository": "git@github.com:nu-system/axios-form.git",
   "author": "yfe-team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yued-fe/nu-vue/issues"
+    "url": "https://github.com/nu-system/axios-form-vue/issues"
   },
-  "homepage": "https://yued-fe.github.io/nu-vue/packages/axios-form",
+  "homepage": "https://nu-system.github.io/vue/axios-form/",
   "dependencies": {
     "axios": "^0.18.0"
   },
