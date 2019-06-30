@@ -1,16 +1,12 @@
-# nu-axios-form-vue
+# nu-vue-axios-form
 
 一个基于 axios 利用 Form 表单的 dom 结构， 发送 request 请求的组件。
 
 ## Setup
 
 ```bash
-$ npm i @y-fe/nu-axios-form-vue
-
-// or yarn
-$ yarn add @y-fe/nu-axios-form-vue
+$ yarn add @_nu/vue-axios-form
 ```
-
 
 ## Usage
 
@@ -30,7 +26,7 @@ $ yarn add @y-fe/nu-axios-form-vue
     </div>
 </template>
 <script>
-    import NuAjaxForm from "@y-fe/nu-axios-form-vue"    
+    import NuAjaxForm from "@_nu/vue-axios-form"    
     export default {
         components: { NuAjaxForm },
         methods: {
