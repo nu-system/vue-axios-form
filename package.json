@@ -2,7 +2,7 @@
   "name": "@_nu/vue-axios-form",
   "version": "0.0.1",
   "description": "一个基于 axios 利用 Form 表单的 dom 结构，发送 request 请求的组件。",
-  "main": "lib/index.js",
+  "main": "lib/index.common.js",
   "author": "yfe-team",
   "license": "MIT",
   "repository": "git@github.com:nu-system/vue-axios-form.git",
@@ -10,6 +10,27 @@
   "homepage": "https://nu-system.github.io/vue/axios-form/",
   "dependencies": {
     "axios": "^0.18.0"
+  },
+  "files": [
+    "lib",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "devDependencies": {
+    "@vue/cli-service-global": "^3.9.3",
+    "conventional-changelog-cli": "^2.0.21",
+    "cz-conventional-changelog": "3.0.2"
+  },
+  "peerDependencies": {
+    "commitizen": "^4.0.3"
+  },
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name index --dest lib src/index.js",
+    "prepublishOnly": "npm run build",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "commitInit": "commitizen init cz-conventional-changelog --yarn --dev --exact"
   },
   "keywords": [
     "ui",
@@ -20,5 +41,10 @@
     "vue-ui",
     "dialog",
     "modal"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

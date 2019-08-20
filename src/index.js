@@ -1,4 +1,4 @@
-import NuAxiosForm from "./src/index.vue";
+import NuAxiosForm from "./index.vue";
 
 /* istanbul ignore next */
 NuAxiosForm.install = function(Vue) {
